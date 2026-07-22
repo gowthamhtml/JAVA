@@ -1,0 +1,36 @@
+class Student {
+    int rollno;
+    String name;
+    String department;
+    String section;
+    int year;
+
+    Student(int rollno, String name, String department, String section, int year) {
+        this.rollno = rollno;
+        this.name = name;
+        this.department = department;
+        this.section = section;
+        this.year = year;
+    }
+
+    void display() {
+        System.out.println("Roll No: " + rollno);
+        System.out.println("Name: " + name);
+        System.out.println("Department: " + department);
+        System.out.println("Section: " + section);
+        System.out.println("Year: " + year);
+    }
+}
+
+public class Hello {
+    public static void main(String[] args) {
+        Student[] students = new Student[3];
+        students[0] = new Student(101, "alice", "cse", "A", 2);
+        students[1] = new Student(102, "bob", "ece", "B", 3);
+        students[2] = new Student(103, "lokesh", "mech", "C", 1);
+
+        for (Student student : students) {
+            student.display();
+        }
+    }
+}
