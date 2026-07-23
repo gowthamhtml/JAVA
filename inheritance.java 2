@@ -1,0 +1,28 @@
+class mygrandpa {
+    void display() {
+        System.out.println("MY grandpa is farmer.");
+    }
+}
+
+class mydaddy extends mygrandpa {
+    void display() {
+        System.out.println("MY daddy is a staff.");
+    }
+}
+class me extends  mydaddy {
+    void display() {
+        System.out.println("I am a student.");
+    }
+}
+
+
+public class inheritance {
+    public static void main(String args[]) {
+        mygrandpa obj1 = new mygrandpa();
+        obj1.display();
+        me obj2 = new me();
+        obj2.display();
+        mydaddy obj3 = new mydaddy();
+        obj3.display();
+    }
+}
